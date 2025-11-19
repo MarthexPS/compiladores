@@ -1,0 +1,51 @@
+proc fibo(){
+    a=1
+    b=1
+    cta=0
+    while(cta < $1){
+       fi=a+b
+       a=b
+       b=fi
+       print fi
+       cta= cta+1
+    }
+}
+
+func fac(){
+    if($1==0) return 1 else return $1*fac($1-1)
+}
+
+proc bina(){
+    cociente=int($1/2)
+    while(cociente >= 1){
+        print cociente
+        cociente=int(cociente/2)
+    }
+}
+
+print "Hola todos"
+print "dame un numero\n"
+
+
+x=5
+print "\n"
+print x
+
+print "\n"
+fac(x)
+fibo(x+3)
+print "\n"
+bina(61)
+print "\n"
+proc gg(){
+   print 5+9*2
+}
+gg()
+print "\n"
+
+f = 44
+proc gg(){
+   print f
+}
+gg()
+print "\n"
